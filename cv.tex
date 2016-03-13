@@ -1,0 +1,146 @@
+% -----------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,russian]{moderncv}
+
+% -----------------------------------------------------------------------------------
+
+\moderncvtheme[purple]{classic}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel}
+\usepackage{xcolor}
+\usepackage[a4paper,margin=1in]{geometry}
+
+% -----------------------------------------------------------------------------------
+
+\newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
+\newcommand*{\github}[1]{\def\@github{#1}}
+\newcommand*{\externallink}[2][]{%
+  \ifthenelse{\equal{#1}{}}%
+    {\href{#2}{#2}}%
+    {\href{#2}{#1}}}
+\newcommand\githublogo{\raisebox{-1pt}{\includegraphics[height=9pt]{github}}\ }
+\newcommand\linkedinlogo{\raisebox{-1pt}{\includegraphics[height=9pt]{linkedin}}\ }
+
+% -----------------------------------------------------------------------------------
+% Шапка
+
+\photo{portrait}
+\firstname{Станислав}\familyname{Лебедев}
+\address{ул. Свердлова, 20/35}{Тольятти}
+\mobile{+7(927)772-26-87}
+\phone{+7(8482)31-78-41}
+\email{kugui@yandex.ru}
+% \social[vkontakte][vk.com/serenissimus]{}
+\social[linkedin][ru.linkedin.com/in/svlebedev]{}
+\social[github][github.com/serenissimus]{}
+% \social[bitbucket][bitbucket.org/swan]{}
+
+%\extrainfo{}
+% \quote{}
+%\nopagenumbers{}
+
+% -----------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle
+
+% -----------------------------------------------------------------------------------
+% Образование
+
+\section{Образование}
+\cventry{2005\,--\,2010}
+  {Математик, системный программист}
+  {Тольяттинский Государственный Университет}
+  {Тольятти}
+  {}
+  {}
+
+% -----------------------------------------------------------------------------------
+% Дипломная работа
+
+\section{Дипломная работа}
+\cvline{Название}{\emph{Морфологический анализ крови}}
+\cvline{Научный руководитель}{Нечаев Андрей Николаевич}
+\cvline{Описание}{
+  \small Использование алгоритмов сегментации изображений и многоуровневых
+  нейронных сетей для анализа образцов крови по фотоснимку}
+
+% -----------------------------------------------------------------------------------
+% Опыт работы
+
+\section{Опыт работы}
+
+\subsection{По специальности}
+\cventry{2010--По сей день}{Инженер-программист}{{ЗАО} <<KSI Corporation>>}{Москва}{}
+    {Анализ поставленных задач, расчёт времени на выполнение.
+     Ведение отчётности о ходе выполнения.
+     Контроль получения необходимых ресурсов.
+     Разработка программ под разные платформы.}
+
+\subsection{Разный}
+\cventry{Лето 2008}{Слесарь механосборочных работ}{{ОАО} <<АВТОВАЗ>>}{Тольятти}{}
+    {Сборка автомобилей семейства <<Нива>> на конвейере}
+\cventry{Лето 2009}{Менеджер по продажам}{{ЗАО} <<Фина>>}{Тольятти}{}
+    {Менеджер по продажам офисной техники}
+
+\newpage
+
+% -----------------------------------------------------------------------------------
+% Технические навыки
+
+\section{Технические навыки}
+\subsection{Языки программирования и разметки}
+\cvline{Эксперт}{C, C++, Shell, Qml(Qt), Python, XML/XSLT, JSON}
+\cvline{Средний}{SQL, Java, Groovy, JavaScript, Bat Script, HTML4, HTML5, CSS}
+\cvline{Базовый}{C\#, Objective-C}
+
+\subsection{Фреймворки и инструменты}
+\cvline{C++}{Android NDK, Boost, Qt, Gtk, Posix, GTest, GMock, Google Breakpad, Curl, libtorrent}
+\cvline{Python}{Bottle, threading, Alchemy, PIL, Selenium, unittest}
+\cvline{JavaScript}{LibAtom, LibCanvas, jQuery, Webix, Node.Js}
+\cvline{Java}{Android SDK, LibGdx}
+\cvline{Groovy}{LibGdx, Selenium}
+
+\subsection{Навыки администрирования и поддержки}
+\cvline{Youtrack}{Поддержка. Добавление новых проектов и пользователей}
+\cvline{TeamCity}{Поддержка. Добавление новых построений проектов}
+\cvline{Nginx, Apache, MySQL}{Установка и настройка}
+\cvline{Squid}{Настройка прокси сервера с авторизацией}
+
+\subsection{Компьютерные навыки}
+\cvline{Операционные системы}{Linux, Windows, MacOS, Android}
+\cvline{IDE и редакторы}{Vim, QtCreator, Visual Studio, Clion, Oracle SQL Developer, MySQL Workbench, WebStorm, PyCharm, IntelliJ IDEA}
+\cvline{VCS}{Subversion, Mercurial}
+\cvline{Development technics}{TDD, Continuous Integration}
+
+% -----------------------------------------------------------------------------------
+% Иностранные языки
+
+\section{Иностранные языки}
+\cvline{Английский}{Свободно читаю технические тексты и могу поддерживать разговор}
+
+% -----------------------------------------------------------------------------------
+% Хобби
+
+\section{Хобби}
+\cvitem{}{Путешествие}{} %{Набираться новых впечатлений и позитива}
+\cvitem{}{Рыбалка}{} %{Любование красотами родного края с умением приехать с уловом}
+\cvitem{}{Чтение}{} %{Тренировка ума}
+
+% -----------------------------------------------------------------------------------
+% Грамоты
+
+\section{Грамоты}
+\cvline{}{Грамота за вклад в достигнутые результаты компании в 2013 году}
+\cvline{}{Грамота за вклад в достигнутые результаты компании в 2014 году}
+
+% -----------------------------------------------------------------------------------
+% Рекомендации
+
+% \section{Рекомендации}
+% \cvline{А.И. Привалов}{Заведующий вычислительным центром НИИЧаВо.\newline \href{mailto:privalov@nii4avo.ru}{privalov@nii4avo.ru}}
+% \cvline{А. Балаганов}{Уполномоченный по копытам ООО <<Рога и Копыта>>\newline \href{mailto:balaganov@horns-and-hooves.com}{balaganov@horns-and-hooves.com}}
+\end{document}
+
